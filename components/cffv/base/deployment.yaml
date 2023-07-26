@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: cffv
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-ghfb-tenant/byoc-app-vqwk/cffv@sha256:4528f0885f663b326f1be388e90899d628cc9a6a52eb72f74684c8476a58487d
         name: my-java-quarkus
         ports:
         - containerPort: 8081
