@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: cffv
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: cffv
+    app.kubernetes.io/part-of: byoc-app-vqwk
+  name: cffvsyao
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: cffv
+    weight: null
+status: {}

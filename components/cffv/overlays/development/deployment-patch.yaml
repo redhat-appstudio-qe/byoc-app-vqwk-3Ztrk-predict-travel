@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: cffv
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-ghfb-tenant/byoc-app-vqwk/cffv@sha256:4528f0885f663b326f1be388e90899d628cc9a6a52eb72f74684c8476a58487d
+        name: my-java-quarkus
+        resources: {}
+status: {}
